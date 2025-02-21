@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and linking external resources -->
+    <meta charset="UTF-8"> <!-- Defines character encoding for proper text display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile responsiveness -->
+    <title>Reviews - LLC Carpets</title> <!-- Webpage title displayed on the browser tab -->
+    
+    <!-- Linking external CSS for styling -->
+    <link rel="stylesheet" href="css/Website Reviews Styling.css">
+    
+    <!-- Importing Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- JavaScript for top header behavior and ratings system -->
+    <script src="js/extra.js"></script> <!-- Likely for keeping header fixed during scroll -->
+    <script src="js/ratings.js" defer></script> <!-- JavaScript for handling customer reviews and ratings -->
+</head>
+<body>
+    <!-- Website header section -->
+    <header>
+        <div class="header">🛠️ LLC Carpet Fitting - Quality Carpets 🛠️</div> <!-- Branding header text -->
+        
+        <!-- Navigation bar -->
+        <nav class="extra">
+            <div class="Home">
+                <a href="Website Main.html"> <!-- Home button linking back to main page -->
+                    <img src="img/Home.png" alt="Home button" width="50" height="50">
+                </a>
+            </div>
+            <ul class="extra"> <!-- Navigation menu for different pages -->
+                <li><a href="Website Shop.html">Shop</a></li>
+                <li><a href="Website Social.html">Social</a></li>
+                <li><a href="Website Reviews.html">Reviews</a></li>
+            </ul>
+            <div class="logo"> <!-- Company logo -->
+                <img src="img/image.png" alt="LLC Carpets Logo" width="80" height="60">
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Section displaying customer reviews -->
+    <section class="reviews-section">
+        <h1>Customer Reviews</h1>
+        <div class="reviews-container" id="reviews-container">
+            <!-- Individual reviews from customers -->
+            <div class="review">
+                <h2>Josh Bowman</h2>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Excellent service! The carpets look amazing and the fitting was done perfectly.</p>
+            </div>
+            <div class="review">
+                <h2>Jane Ritter</h2>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Very professional and friendly staff. Highly recommend LLC Carpets!</p>
+            </div>
+            <div class="review">
+                <h2>Elsa Ritter</h2>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>Great work, amazing quality.</p>
+            </div>
+            <div class="review">
+                <h2>Matthew Macguinness</h2>
+                <p>⭐⭐⭐⭐</p>
+                <p>Everything was done very well, however they took slightly longer than I thought.</p>
+            </div>
+            <div class="review">
+                <h2>Logan Wheeler</h2>
+                <p>⭐⭐⭐⭐</p>
+                <p>Carpet colour was slightly off and they had no replacements, however everything else was done perfectly</p>
+            </div>
+            <div class="review">
+                <h2>Chris Vega</h2>
+                <p>⭐⭐⭐</p>
+                <p>Decent work, good quality. However I wasn't a fan of their timing for work.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section allowing users to leave a review -->
+    <section class="leave-review">
+        <h2>Leave a Review</h2>
+        <form id="review-form"> <!-- Form for submitting a new review -->
+            <input type="text" id="reviewer-name" placeholder="Your Name" required>
+            <select id="review-rating" required>
+                <option value="" disabled selected>Star Rating</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+            </select>
+            <textarea id="review-comments" placeholder="Your Comments" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+    <!-- Footer with contact details and additional links -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <div class="gallery"> <!-- Button linking to the gallery page -->
+                    <a href="Gallery.html">
+                        <button><h3>Click me to see some of our work!</h3></button>
+                    </a>
+                </div>   
+                <br>
+                <br>
+                <h2>Contact Us</h2>
+                <p>Address: 25 Stamford Lane, Manchester, UK</p>
+                <p>Email: info@llccarpets.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 LLC Carpet Fitting | All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>

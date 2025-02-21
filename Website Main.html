@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata and linking external resources -->
+    <meta charset="UTF-8"> <!-- Defines character encoding for proper text display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile responsiveness -->
+    <title>LLC Carpets</title> <!-- Webpage title displayed on the browser tab -->
+    
+    <!-- Linking external CSS for styling -->
+    <link rel="stylesheet" href="css/Website Main Styling.css">
+    
+    <!-- Importing Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- JavaScript for top header behavior and high contrast toggle -->
+    <script src="js/extra.js"></script> <!-- Likely for keeping header fixed during scroll -->
+    <script src="js/contrast.js"></script> <!-- JavaScript for contrast mode toggle -->
+</head>
+
+<body>
+    <!-- Website header section -->
+    <header>
+        <div class="header">🛠️ LLC Carpet Fitting - Quality Carpets 🛠️</div> <!-- Branding header text -->
+        
+        <!-- Navigation bar -->
+        <nav class="extra">
+            <div class="home">
+                <a href="Website Main.html"> <!-- Home button linking back to main page -->
+                    <img src="img/Home.png" alt="Home button" width="50" height="50">
+                </a>
+            </div>
+            <ul class="extra"> <!-- Navigation menu for different pages -->
+                <li><a href="Website Shop.html">Shop</a></li>
+                <li><a href="Website Social.html">Social</a></li>
+                <li><a href="Website Reviews.html">Reviews</a></li>
+            </ul>
+            <div class="logo"> <!-- Company logo -->
+                <img src="img/image.png" alt="LLC Carpets Logo" width="80" height="60">
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Hero section with a marketing message -->
+    <section class="bar-extra">
+        <div class="overlay">
+            <h1>Looking for carpets/fitting around Manchester?</h1>
+            <p>You're at the right place. Scroll down to book your free home visit.</p>
+        </div>
+    </section>
+
+    <!-- Booking form section for scheduling home visits -->
+    <section class="booking">
+        <div class="booking-form">
+            <h2>Book a Free Home Visit</h2>
+            <form id="bookingForm"> <!-- User input form for booking -->
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="text" id="address" placeholder="Address Line 1" required>
+                <input type="text" id="city" placeholder="Town / City" required>
+                <input type="text" id="postcode" placeholder="Postcode" required>
+                <input type="tel" id="phone" placeholder="Telephone Number" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <button type="submit">→ Confirm</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section to display submitted information -->
+    <section class="display-info">
+        <div class="info-box" id="infoBox">
+            <h2>Submitted Information</h2>
+            <p id="displayFirstName"></p>
+            <p id="displayLastName"></p>
+            <p id="displayAddress"></p>
+            <p id="displayCity"></p>
+            <p id="displayPostcode"></p>
+            <p id="displayPhone"></p>
+            <p id="displayEmail"></p>
+        </div>
+    </section>
+
+    <!-- Footer with contact details and additional links -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <div class="gallery"> <!-- Button linking to the gallery page -->
+                    <a href="Gallery.html">
+                        <button><h3>Click me to see some of our work!</h3></button>
+                    </a>
+                </div>   
+                <br>
+                <br>
+                <h2>Contact Us</h2>
+                <p>Address: 25 Stamford Lane, Manchester, UK</p>
+                <p>Email: info@llccarpets.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 LLC Carpet Fitting | All Rights Reserved
+        </div>
+    </footer>
+
+    <!-- JavaScript for form validation -->
+    <script src="js/validation.js"></script>
+</body>
+
+</html>

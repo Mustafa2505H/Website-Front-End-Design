@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and linking external resources -->
+    <meta charset="UTF-8"> <!-- Defines character encoding for proper text display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile responsiveness -->
+    <title>Gallery - LLC Carpets</title> <!-- Webpage title displayed on the browser tab -->
+    
+    <!-- Linking external CSS for styling -->
+    <link rel="stylesheet" href="css/Gallery Styling.css">
+    
+    <!-- Importing Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Importing Bootstrap for carousel functionality -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- JavaScript for additional functionality -->
+    <script src="js/extra.js"></script> <!-- Likely handles navigation or interactions -->
+</head>
+<body>
+    <!-- Website header section -->
+    <header>
+        <div class="header">🛠️ LLC Carpet Fitting - Quality Carpets 🛠️</div> <!-- Branding header text -->
+        
+        <!-- Navigation bar -->
+        <nav class="extra">
+            <div class="Home"> <!-- Home button linking back to main page -->
+                <a href="Website Main.html">
+                    <img src="img/Home.png" alt="Home button" width="50" height="50">
+                </a>
+            </div>
+            <ul class="extra"> <!-- Navigation menu for different pages -->
+                <li><a href="Website Shop.html">Shop</a></li>
+                <li><a href="Website Social.html">Social</a></li>
+                <li><a href="Website Reviews.html">Reviews</a></li>
+            </ul>
+            <div class="logo"> <!-- Company logo -->
+                <img src="img/image.png" alt="LLC Carpets Logo" width="80" height="60">
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Bootstrap carousel for displaying carpet images -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Carpet1.png" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Carpet2.png" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Carpet5.png" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Carpet4.png" class="d-block w-100" alt="Slide 4">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Carpet5.png" class="d-block w-100" alt="Slide 5">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Carpet6.png" class="d-block w-100" alt="Slide 6">
+            </div>
+        </div>
+        <!-- Carousel navigation buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- Footer with contact details -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Address: 25 Stamford Lane, Manchester, UK</p>
+                <p>Email: info@llccarpets.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 LLC Carpet Fitting | All Rights Reserved
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript for enabling carousel functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
