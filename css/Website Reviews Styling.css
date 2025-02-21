@@ -1,0 +1,242 @@
+body {
+    font-family: 'Rowdies', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Sets body font, removes default margin/padding, and uses flexbox for layout. */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* Ensures body takes full viewport height and adds top padding. */
+    min-height: 100vh;
+    padding-top: 160px;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    /* Fixes header at the top with a shadow and full width. */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* Styles the header with black background, white text, and centered alignment. */
+    padding: 10px;
+    font-size: 20px;
+}
+
+.extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Uses flexbox to space items evenly and center them vertically. */
+    padding: 15px 30px;
+}
+
+.extra .home {
+    flex: 1;
+    text-align: left;
+    /* Allows the home section to grow and aligns text to the left. */
+}
+
+.extra .logo {
+    flex: 0 0 auto;
+    text-align: right;
+    /* Prevents the logo from growing/shrinking and aligns it to the right. */
+}
+
+.extra ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    /* Removes list bullets, uses flexbox, and adds spacing between items. */
+    justify-content: center;
+    flex: 2;
+    margin-left: 70px;
+}
+
+.extra li {
+    position: relative;
+    /* Positions child elements relative to the list item. */
+}
+
+.extra li::after {
+    content: '';
+    display: block;
+    width: 3px;
+    /* Adds a vertical line after each list item (except the last one). */
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.extra li:last-child::after {
+    display: none;
+    /* Hides the line for the last list item. */
+}
+
+.extra a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    /* Styles links with no underline, bold text, and hover effects. */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.extra a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-section {
+    text-align: center;
+    padding: 50px 20px;
+    flex: 1;
+    /* Centers content, adds padding, and allows the section to grow. */
+}
+
+.reviews-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    /* Styles the heading with a large font size and spacing. */
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Uses flexbox to stack reviews vertically with spacing. */
+    align-items: center;
+}
+
+.review {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    /* Styles each review with padding, rounded corners, and a shadow. */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.review h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    /* Styles review headings with spacing and font size. */
+}
+
+.review p {
+    margin: 5px 0;
+    font-size: 18px;
+    /* Adds spacing and font size to review paragraphs. */
+}
+
+.leave-review {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    /* Centers content, adds padding, and sets a light background. */
+    border-top: 1px solid #ddd;
+}
+
+.leave-review h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    /* Styles the heading with spacing and font size. */
+}
+
+.leave-review form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Uses flexbox to stack form elements vertically with spacing. */
+    align-items: center;
+}
+
+.leave-review input,
+.leave-review select,
+.leave-review textarea,
+.leave-review button {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    /* Styles form elements with consistent width, padding, and borders. */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.leave-review textarea {
+    resize: vertical;
+    height: 100px;
+    /* Allows vertical resizing of the textarea with an initial height. */
+}
+
+.leave-review button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    /* Styles the button with a dark background and hover effect. */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.leave-review button:hover {
+    background-color: #34495e;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    /* Fixes the header at the top of the page. */
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    /* Styles the footer with padding, centered text, and a light background. */
+    color: #333;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Uses flexbox to center content and allow wrapping. */
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+    /* Allows footer sections to grow and sets a minimum width. */
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+    /* Adds spacing below footer headings. */
+}
+
+.footer-bottom {
+    background-color: #e8e8e8;
+    padding: 10px 0;
+    margin-top: 20px;
+    /* Styles the bottom section of the footer with a darker background. */
+}

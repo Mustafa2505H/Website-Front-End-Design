@@ -1,0 +1,171 @@
+/* Global body styling */
+body {
+    font-family: 'Rowdies', sans-serif !important; /* Sets the font family to 'Rowdies' with a fallback to sans-serif */
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    padding-top: 160px; /* Adds padding at the top to accommodate the fixed header */
+}
+
+/* Styling for the fixed header */
+header {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow below the header */
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header stays above other content */
+}
+
+/* Styling for the header's top section */
+.header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Styling for the navigation bar */
+.extra {
+    display: flex;
+    justify-content: space-between; /* Spaces out child elements evenly */
+    align-items: center;
+    padding: 15px 30px;
+}
+
+/* Styling for the home link */
+.extra .home {
+    flex: 1; /* Allows the home link to take up available space */
+    text-align: left;
+}
+
+/* Styling for the logo */
+.extra .logo {
+    flex: 0 0 auto; /* Prevents the logo from growing or shrinking */
+    text-align: right;
+}
+
+/* Styling for the navigation links */
+.extra ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adds space between list items */
+    justify-content: center;
+    flex: 2; /* Allows the list to take up twice the available space */
+    margin-left: 70px;
+}
+
+/* Styling for individual list items */
+.extra li {
+    position: relative; /* Enables positioning for pseudo-elements */
+}
+
+/* Adds a vertical divider after each list item */
+.extra li::after {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.2); /* Sets the divider color */
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%); /* Centers the divider vertically */
+}
+
+/* Removes the divider after the last list item */
+.extra li:last-child::after {
+    display: none;
+}
+
+/* Styling for navigation links */
+.extra a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Adds smooth transitions */
+}
+
+/* Hover effect for navigation links */
+.extra a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Adds a light background on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the carousel container */
+.carousel {
+    max-width: 100%;
+    margin: 30px auto; /* Centers the carousel horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden; /* Hides overflow content */
+}
+
+/* Styling for carousel images */
+.carousel img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover; /* Ensures images cover the container without distortion */
+}
+
+/* Styling for the inner carousel container */
+.carousel-inner {
+    display: flex;
+    align-items: center;
+}
+
+/* Disables transition effects for carousel items */
+.carousel-item {
+    transition: none !important;
+}
+
+/* Styling for carousel navigation icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Sets the icon background color */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    color: #333;
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+    width: 100%;
+}
+
+/* Styling for the footer content */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap; /* Allows content to wrap to the next line */
+}
+
+/* Styling for individual footer sections */
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+/* Styling for footer section headings */
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+/* Styling for the footer's bottom section */
+.footer-bottom {
+    background-color: #e8e8e8;
+    padding: 10px 0;
+    margin-top: 20px;
+}

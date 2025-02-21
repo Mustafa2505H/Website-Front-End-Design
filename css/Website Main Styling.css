@@ -1,0 +1,239 @@
+/* Global body styling */
+body {
+    font-family: 'Rowdies', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    padding-top: 160px; /* Adds padding at the top to accommodate the fixed header */
+}
+
+/* Styling for the fixed header */
+header {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow below the header */
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header stays above other content */
+}
+
+/* Styling for the header's top section */
+.header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Styling for the navigation bar */
+.extra {
+    display: flex;
+    justify-content: space-between; /* Spaces out child elements evenly */
+    align-items: center;
+    padding: 15px 30px;
+}
+
+/* Styling for the home link */
+.extra .home {
+    flex: 0 0 auto; /* Prevents the home link from growing or shrinking */
+    text-align: left;
+}
+
+/* Styling for the logo */
+.extra .logo {
+    flex: 0 0 auto; /* Prevents the logo from growing or shrinking */
+    text-align: right;
+}
+
+/* Styling for the navigation links */
+.extra ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adds space between list items */
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex: 1; /* Allows the list to take up available space */
+}
+
+/* Styling for individual list items */
+.extra li {
+    position: relative; /* Enables positioning for pseudo-elements */
+}
+
+/* Adds a vertical divider after each list item */
+.extra li::after {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.485); /* Sets the divider color */
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%); /* Centers the divider vertically */
+}
+
+/* Removes the divider after the last list item */
+.extra li:last-child::after {
+    display: none;
+}
+
+/* Styling for navigation links */
+.extra a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Adds smooth transitions */
+}
+
+/* Hover effect for navigation links */
+.extra a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Adds a light background on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the hero section with a background image */
+.bar-extra {
+    background: url("../img/download.jpg") no-repeat center center/cover; /* Sets a background image */
+    height: 550px; /* Sets a fixed height for the section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+/* Styling for the overlay box */
+.overlay {
+    background: rgb(255, 255, 255); /* Sets a white background */
+    padding: 20px;
+    border-radius: 40px; /* Rounds the corners */
+    text-align: center;
+    border: 10px solid black; /* Adds a thick black border */
+}
+
+/* Styling for the booking section */
+.booking {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* Styling for the booking form */
+.booking-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    width: 100%;
+    max-width: 400px; /* Limits the form width */
+    text-align: center;
+}
+
+/* Styling for the booking form heading */
+.booking-form h2 {
+    margin-bottom: 20px;
+}
+
+/* Styling for form inputs and buttons */
+.booking-form input,
+.booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Rounds the corners */
+}
+
+/* Styling for form inputs */
+.booking-form input {
+    border: 1px solid #ccc; /* Adds a light border */
+}
+
+/* Styling for the form button */
+.booking-form button {
+    background-color: #2c3e50; /* Sets the button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hover effect for the form button */
+.booking-form button:hover {
+    background-color: #34495e; /* Darkens the button on hover */
+}
+
+/* Styling for the info display section */
+.display-info {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Styling for the info box */
+.info-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    width: 100%;
+    max-width: 400px; /* Limits the box width */
+    text-align: left;
+    display: none; /* Hides the box by default */
+}
+
+/* Styling for the info box heading */
+.info-box h2 {
+    margin-bottom: 20px;
+}
+
+/* Styling for the fixed header utility class */
+.fixed-header {
+    position: fixed;
+    top: 0;
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    color: #333;
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+    width: 100%;
+}
+
+/* Styling for the footer content */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap; /* Allows content to wrap to the next line */
+}
+
+/* Styling for individual footer sections */
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+/* Styling for footer section headings */
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+/* Styling for the footer's bottom section */
+.footer-bottom {
+    background-color: #e8e8e8;
+    padding: 10px 0;
+    margin-top: 20px;
+}
